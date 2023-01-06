@@ -221,7 +221,7 @@ const int castl_rights[64] = {
 int make_move(Chessboard* board, int move)
 {
     Chessboard cp;
-    copy_chessboard(&cp,  board);   // NEED TO FIX THIS, ENGINE ISNT SUPPOSED TO CHECK THAT HERE
+    copy_chessboard(&cp,  board);
     
     // parse move
     int source_square = get_move_source(move);
@@ -311,7 +311,7 @@ int make_move(Chessboard* board, int move)
     if (is_square_attacked(board, LSB(board->bitboard[king_to_be_attacked]), board->side))
     {
         copy_chessboard(board, &cp);
-        return 0;   // return illegal move
+        return 0;   // return that move is  illegal
     }
     else
     {
