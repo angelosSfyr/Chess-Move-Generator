@@ -6,7 +6,7 @@ To generate a list of pseudo-legal moves, the program first needs to generate a 
 The function make_move is provided, which attempts to execute a move on the chessboard and returns a boolean indicating the legality of the move.
 If the move is illegal, make_move restores the board to its previous position and returns false. Otherwise, it returns true.
 
-# ABout BitBoards
+# About BitBoards
 
 ![Alt text](./Bitboard.gif)
 
