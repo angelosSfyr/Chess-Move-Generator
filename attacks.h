@@ -15,13 +15,13 @@
 
 
 
-bitboard bishop_attack_masks[64];
-bitboard rook_attack_masks[64];
-bitboard bishop_attack_table[64][512];
-bitboard rook_attack_table[64][4096];    
-bitboard pawn_attack_table[2][64];
-bitboard knight_attack_table[64];
-bitboard King_attack_table[64];
+extern bitboard bishop_attack_masks[64];
+extern bitboard rook_attack_masks[64];
+extern bitboard bishop_attack_table[64][512];
+extern bitboard rook_attack_table[64][4096];    
+extern bitboard pawn_attack_table[2][64];
+extern bitboard knight_attack_table[64];
+extern bitboard King_attack_table[64];
 
 
 

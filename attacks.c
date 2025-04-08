@@ -4,7 +4,13 @@
 #include "magic.h"
 #include "chessboard.h"
 
-
+bitboard bishop_attack_masks[64];
+bitboard rook_attack_masks[64];
+bitboard bishop_attack_table[64][512];
+bitboard rook_attack_table[64][4096];    
+bitboard pawn_attack_table[2][64];
+bitboard knight_attack_table[64];
+bitboard King_attack_table[64];
 
 bitboard pawn_attack_mask(int bit_index, int side)
 { /* from the enumeration WHITE = 0, BLACK = 1 */
