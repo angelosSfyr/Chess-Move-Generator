@@ -38,7 +38,6 @@ enum
 #define get_bit(bb, bit) (((1ULL) << (bit)) & (bb))
 #define pop_lsb(bb) ((bb) &= (bb-1))
 
-
 void print_bb(bitboard bb);
 
 /**

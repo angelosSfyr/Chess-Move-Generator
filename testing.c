@@ -63,7 +63,6 @@ const struct Test_case case6 = {pos6, {46, 2079, 89890, 3894594, 164075551,  692
 
 void test_move_generator()
 {
-
     initialize_attacks();
     Chessboard board;
     struct Test_case cases[6] = {case1, case2, case3, case4, case5, case6};
